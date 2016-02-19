@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* reset */
+html {font-size: 100px;}
+.footer .download{padding-top:0.5rem;padding-bottom: 0.3rem;}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+    html {font-size: 95px;}
+}
+@media only screen and (min-width: 330px) {
+    .footer .download{padding-top:1.1rem;}
+}
+@media only screen and (min-width: 401px) {
+    html {font-size: 112px !important;}
+}
+@media only screen and (min-width: 428px) {
+    html {font-size: 125px !important;}
+}
+@media only screen and (min-width: 481px) {
+    html {font-size: 133px !important;}
+}
+@media only screen and (min-width: 569px) {
+    html {font-size: 150px !important;}
+}
+@media only screen and (min-width: 641px) {
+    html {font-size: 178px !important;}
+    .footer .download{padding-top:3.5rem;}
+}
+html,body,div,span,p,a,em,img,ul,ol,li,dl,dt,dd,h3,h4{ border: 0; margin: 0; padding: 0;}
+body{ background-color:#fff; font: .12rem/1.2 arial,sans-serif; outline: none; margin: 0; padding: 0;}
+img { width: 100%; position: relative; outline: none}
+.shareicon{ display: none;}
+#img0 { width: 88%;}
+#imgBack { position: absolute}
+#logoImg { width: 29%;}
+/*img { outline: none; vertical-align: middle;}*/
+/*input { -webkit-appearance: none; -moz-appearance: none; appearance: none; font-size: .14rem; margin: 0; outline: 0; padding: 0; vertical-align: top;}*/
+* { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+a:-webkit-any-link { text-decoration: none; }
+a,a:focus,a:outline,a img { border: none; hide-focus: expression(this.hideFocus=true); outline: none; }
+a { -webkit-tap-highlight-color: rgba(0,0,0,0); color: #333; outline: none; text-decoration: none;}
+/*a:hover { outline: none;}*/
+a,a:link,a:visited {color: #0090d9; outline: none; text-decoration: none; }
+/*a.active{ color: #0090d9}*/
+/*!* Css reset end *!*/
+
+/*!* main *!*/
+.section{ height: 100%; width: 100%; position: absolute; left: 0; top: 0%;}
+.page{ position: relative; overflow: hidden}
+/*.pageIndex{ text-align: center;}*/
+.pageIndex .lg{ width: 88%; padding-top: 0%; padding-left: 6%}
+.nologo{ padding-top: 30%}
+.title{font-size: 24px; color: #ffffff; font-weight: lighter; margin-bottom: 0.2rem}
+.pageEnd{ color: #ffffff; text-align: center;}
+/*.pageEnd{position: relative;min-height: 100%;*/
+/*padding-top: .67rem; color: #fff; text-align: center;}*/
+.pageEnd .endMain{position: absolute; padding-bottom: 1rem; margin-bottom: -1rem; top: 0.4rem; width: 100%;}
+/*.pageEnd .endMain.weixin{top: 0.2rem; width: 100%;}*/
+.pageEnd h2{padding:.32rem 0 .3rem; background: url(activity/201601_springFestival/images/titBg@3x.png) no-repeat; background-size: 100%; width: 60%; margin: 0 auto; font-size: .2rem; font-weight: normal;}
+.pageEnd h3{ font-size: .22rem; font-weight: normal; line-height: 2.5; color: #ffffff;}
+.pageEnd table{ width: 84%; margin: 0 auto; }
+.pageEnd table td{ font-size: .12rem; text-align: left; line-height: 2; padding-left: 5%; padding: 0.1rem 0;}
+.pageEnd table.weixin td{padding: 0.02rem;}
+.pageEnd .threeCol{text-align: right;}
+.pageEnd .oneCol{ text-align: left;}
+.pageEnd table .btn{ display: inline-block; width: .62rem; height: .22rem; text-align: center; line-height: .22rem;
+    border-radius: .1rem; background-color: #0090d9; color: #fff; font-size: .14rem;}
+.pageEnd .fmLogo{position: absolute; bottom: 0.7rem; width: 100%; text-align: center;}
+.pageEnd .fmLogo img{width: 33.3%;}
+.pageEnd .fmLogo a:first-child{width: .46rem;}
+.pageEnd .fmLogo .dl{ font-size: .13rem; line-height: 2; padding-top: .06rem;}
+.pageEnd .fmLogo .more{ font-size: .16rem; display: block; color: #fff; margin-top: 0rem;}
+.pageEnd .pointMore{ width: .45rem; margin: 0.08rem auto; }
+.pageEnd .pointMore .weixin{ margin: 0rem auto 0rem; }
+.pageEnd .pointMore img{width: 100%;}
+.footer .download{padding-top:0.5rem;padding-bottom: 0.3rem;}
+#endBack{position: absolute; left: 0px}
+.btn1{background: url("../images/detail_1.png") no-repeat;right: 1.2%; top:47%; }
+.btn2{background: url("../images/detail_2.png") no-repeat;right: 1.2%; top:47%; }
+.btn3{background: url("../images/detail_3.png") no-repeat;right: 1.2%; top:47%; }
+.btn4{background: url("../images/detail_4.png") no-repeat;right: 1.2%; top:41.5%; }
+.btn5{background: url("../images/detail_5.png") no-repeat;right: 1.2%; top:42%; }
+.btn6{background: url("../images/detail_6.png") no-repeat;right: 1.2%; top:35%; }
+.btn7{background: url("../images/detail_7.png") no-repeat;right: 1.2%; top:47%; }
+.detailBtn{background-size: 100%; width: 180px; height: 36px;  display: block; position: absolute; }
+/* iphone5/5s */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+    .detailBtn{background-size: 100%; width: 160px; height: 32px;  display: block; position: absolute; }
+    .btn4{right: 1.2%; top:42.5%; }
+}
+/* iphone4/4s */
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+    #logoImg{width: 28%;}
+    .btn1{background: url("../images/detail_1.png") no-repeat;right: 1.2%; top:53%; }
+    .btn2{background: url("../images/detail_2.png") no-repeat;right: 1.2%; top:51%; }
+    .btn3{background: url("../images/detail_3.png") no-repeat;right: 1.2%; top:53.5%; }
+    .btn4{background: url("../images/detail_4.png") no-repeat;right: 1.2%; top:50%; }
+    .btn5{background: url("../images/detail_5.png") no-repeat;right: 1.2%; top:47%; }
+    .btn6{background: url("../images/detail_6.png") no-repeat;right: 1.2%; top:41%; }
+    .btn7{background: url("../images/detail_7.png") no-repeat;right: 1.2%; top:53%; }
+    .detailBtn{background-size: 100%; width: 1.6rem; height: 0.6rem;  display: block; position: absolute; }
+    .page table td{padding: 0.05rem 0;}
+    .title{margin-top: .2rem;}
+    .pageEnd .endMain{top: 0.3rem;}
+    .endMain.weixin{top: 0.2rem;}
+    .pageEnd .fmLogo{bottom: 0.2rem;}
+    .pageEnd .fmLogo .more{margin-top: 0rem;}
+    .pageEnd .pointMore{ margin: 0 auto;}
+
+}

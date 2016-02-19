@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>【“飞”看不可】2016最有bigger的贺岁观影指南</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link href="{=$data['cssRoot']=}style.css" rel="stylesheet" type="text/css">
+</head>
+<body onmousewheel="return false;">
+<section class="section">
+	<div id="container">
+		<div class="page page01">
+			<img id="img1" data-original="{=$data['imgRoot']=}film_01.jpg">
+		</div>
+		<div class="page page02">
+			<img id="img2" data-original="{=$data['imgRoot']=}film_02.jpg">
+			<a href="http://film.ffan.com/filmChannelDetail?filmNo=1450984804728" class="detailBtn btn1"></a>
+		</div>
+		<div class="page page03">
+			<img id="img3" data-original="{=$data['imgRoot']=}film_03.jpg">
+			<a href="http://film.ffan.com/filmChannelDetail?filmNo=1450984809232" class="detailBtn btn2"></a>
+		</div>
+		<div class="page page04">
+			<img id="img4" data-original="{=$data['imgRoot']=}film_04.jpg">
+			<a href="http://film.ffan.com/filmChannelDetail?filmNo=1446837605804" class="detailBtn btn3"></a>
+		</div>
+		<div class="page page05">
+			<img id="img5" data-original="{=$data['imgRoot']=}film_05.jpg">
+			<a href="http://film.ffan.com/filmChannelDetail?filmNo=1447960803193" class="detailBtn btn4"></a>
+		</div>
+		<div class="page page06">
+			<img id="img6" data-original="{=$data['imgRoot']=}film_06.jpg">
+			<a href="http://film.ffan.com/filmChannelDetail?filmNo=1450207200565" class="detailBtn btn5"></a>
+		</div>
+		<div class="page page07">
+			<img id="img7" data-original="{=$data['imgRoot']=}film_07.jpg">
+			<a href="http://film.ffan.com/filmChannelDetail?filmNo=1449775201068" class="detailBtn btn6"></a>
+		</div>
+		<div class="page pageEnd">
+			<img id="endBack" data-original="{=$data['imgRoot']=}film_08.jpg">
+			<div class="endMain">
+				<div class="title">2016贺岁观影指南</div>
+				<table>
+					<tr>
+						<td class="oneCol">恶人报喜</td>
+						<td>1月23日</td>
+						<td class="threeCol"><a href="http://film.ffan.com/filmChannelDetail?filmNo=1450984804728" class="btn">购 票</a></td>
+					</tr>
+					<tr>
+						<td class="oneCol">鼠来宝4：萌在囧途</td>
+						<td>1月26日</td>
+						<td class="threeCol"><a href="http://film.ffan.com/filmChannelDetail?filmNo=1450984809232" class="btn">购 票</a></td>
+					</tr>
+					<tr>
+						<td class="oneCol">功夫熊猫3</td>
+						<td>1月29日</td>
+						<td class="threeCol"><a href="http://film.ffan.com/filmChannelDetail?filmNo=1446837605804" class="btn">购 票</a></td>
+					</tr>
+					<tr>
+						<td class="oneCol">美人鱼</td>
+						<td>2月8日</td>
+						<td class="threeCol"><a href="http://film.ffan.com/filmChannelDetail?filmNo=1449775201068" class="btn">购 票</a></td>
+					</tr>
+					<tr>
+						<td class="oneCol">澳门风云3</td>
+						<td>2月8日</td>
+						<td class="threeCol"><a href="http://film.ffan.com/filmChannelDetail?filmNo=1450207200565" class="btn">购 票</a></td>
+					</tr>
+					<tr>
+						<td class="oneCol">西游记之孙悟空三打白骨精</td>
+						<td>2月8日</td>
+						<td class="threeCol"><a href="http://film.ffan.com/filmChannelDetail?filmNo=1447960803193" class="btn">购 票</a></td>
+					</tr>
+				</table>
+			</div>
+
+			<!--<div class="fmLogo" data-imgUrl="{=$data.wx_share_json.imgUrl=}" data-line_link="{=$data.wx_share_json.lineLink=}"-->
+				 <!--data-desc="{=$data.wx_share_json.descContent=}" data-title="{=$data.wx_share_json.shareTitle=}"-->
+				 <!--data-appId="{=$data.wx_config.appId=}" data-timestamp="{=$data.wx_config.timestamp=}"-->
+				 <!--data-nonceStr="{=$data.wx_config.nonceStr=}" data-signature="{=$data.wx_config.signature=}">-->
+				<!--<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui" tit="ffan.com"><img id="logoImg" src="{=$data['imgRoot']=}logo@3x.png" width="33.33%"></a>-->
+				<!--<p class="dl">点击小鲸鱼 · 下载飞凡APP</p>-->
+				<!--<a class="more">更多观影优惠活动</a>-->
+			<!--</div>-->
+		</div>
+	</div>
+</section>
+</body>
+<script src="{=$data['jsRoot']=}slip.js"></script>
+<script src="{=$data['jsRoot']=}zepto.min.js"></script>
+<script src="{=$data['jsRoot']=}smartLoad.js"></script>
+<script>
+	var w = window.screen.width;
+	var h = window.screen.height;
+	if(w == 320 && h == 480){
+		$('.page img').each(function(){
+			if($(this).data('original')){
+				$(this).attr('data-original', $(this).data('original').replace('images', 'images_ip4'));
+			}
+		})
+
+	}
+	$(".page img").smartLoad({type: 'sync', callback: loadComp});
+	function loadComp(img){
+       $(img).css('top', -($(img).height() - $(window).height()) / 2 + 'px');
+	}
+
+	window.onload = function(){
+		var container = document.getElementById('container');
+		var pages = document.querySelectorAll('.page');
+		var slip = Slip(container, 'y', 300).webapp(pages);
+		slip.height(document.documentElement.clientHeight);
+	}
+
+	var u = navigator.userAgent, app = navigator.appVersion;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	if(isAndroid){
+		function share() {
+			var params = {
+				title: '【“飞”看不可】2016最有bigger的贺岁观影指南',
+				content_tencent: '星爷《美人鱼》领跑贺岁档，还有更多精彩影片尽在飞凡哦~',
+				content_weibo: '星爷《美人鱼》领跑贺岁档，还有更多精彩影片尽在飞凡哦~',
+				url: 'http://film.ffan.com/helloWeixin',
+				picsrc: 'T1XXYTBCbT1RCvBVdK'
+			};
+			document.cookie = 'SHARE_STRING=' + encodeURIComponent(JSON.stringify(params));
+		}
+	}
+	else if(isiOS){
+		var params = {
+			title: '【“飞”看不可】2016最有bigger的贺岁观影指南',
+			content_tencent: '星爷《美人鱼》领跑贺岁档，还有更多精彩影片尽在飞凡哦~',
+			content_weibo: '星爷《美人鱼》领跑贺岁档，还有更多精彩影片尽在飞凡哦~',
+			url: 'http://film.ffan.com/helloWeixin',
+			picsrc: 'T1XXYTBCbT1RCvBVdK'
+		};
+		document.cookie = 'SHARE_STRING=' + encodeURIComponent(JSON.stringify(params));
+	}
+
+</script>
+</html>
