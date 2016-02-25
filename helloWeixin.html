@@ -10,41 +10,46 @@
 	<meta name="format-detection" content="telephone=no">
 	<link href="{=$data['cssRoot']=}style.css" rel="stylesheet" type="text/css">
 	<div style="display: none; margin:0 auto;">
-		<img src="{=$data['imgRoot']=}400.jpg" />
+		<img src="
+		<source>
+		<data>
+		imgRoot	
+		<400 class="jpg">
+		/	</400></data>" alt="">
 	</div>
 </head>
 <body onmousewheel="return false;">
 <section class="section">
 	<div id="container">
 		<div class="page page01">
-			<img id="img1" data-original="{=$data['imgRoot']=}film_01.jpg">
+			<img id="img1" data-original="../images/film_01.jpg">
 		</div>
 		<div class="page page02">
-			<img id="img2" data-original="{=$data['imgRoot']=}film_02.jpg">
+			<img id="img2" data-original="../images/film_02.jpg">
 			<a href="http://m.ffan.com/#/movie/movieDetails?filmNo=1450984804728" class="detailBtn btn1"></a>
 		</div>
 		<div class="page page03">
-			<img id="img3" data-original="{=$data['imgRoot']=}film_03.jpg">
+			<img id="img3" data-original="../images/film_03.jpg">
 			<a href="http://m.ffan.com/#/movie/movieDetails?filmNo=1450984809232" class="detailBtn btn2"></a>
 		</div>
 		<div class="page page04">
-			<img id="img4" data-original="{=$data['imgRoot']=}film_04.jpg">
+			<img id="img4" data-original="../images/film_04.jpg">
 			<a href="http://m.ffan.com/#/movie/movieDetails?filmNo=1446837605804" class="detailBtn btn3"></a>
 		</div>
 		<div class="page page05">
-			<img id="img5" data-original="{=$data['imgRoot']=}film_05.jpg">
+			<img id="img5" data-original="../images/film_05.jpg">
 			<a href="http://m.ffan.com/#/movie/movieDetails?filmNo=1447960803193" class="detailBtn btn4"></a>
 		</div>
 		<div class="page page06">
-			<img id="img6" data-original="{=$data['imgRoot']=}film_06.jpg?asfsaassssaa">
+			<img id="img6" data-original="../images/film_06.jpg?asfsaassssaa">
 			<a href="http://m.ffan.com/#/movie/movieDetails?filmNo=1450207200565" class="detailBtn btn5"></a>
 		</div>
 		<div class="page page07">
-			<img id="img7" data-original="{=$data['imgRoot']=}film_07.jpg">
+			<img id="img7" data-original="../images/film_07.jpg">
 			<a href="http://m.ffan.com/#/movie/movieDetails?filmNo=1449775201068" class="detailBtn btn6"></a>
 		</div>
 		<div class="page pageEnd">
-			<img id="endBack" data-original="{=$data['imgRoot']=}film_08.jpg">
+			<img id="endBack" data-original="../images/film_08.jpg">
 			<div class="endMain weixin">
 				<div class="title">2016贺岁观影指南</div>
 				<table>
@@ -84,7 +89,7 @@
 				 data-desc="{=$data.wx_share_json.descContent=}" data-title="{=$data.wx_share_json.shareTitle=}"
 				 data-appId="{=$data.wx_config.appId=}" data-timestamp="{=$data.wx_config.timestamp=}"
 				 data-nonceStr="{=$data.wx_config.nonceStr=}" data-signature="{=$data.wx_config.signature=}">
-				<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui" tit="ffan.com"><img id="logoImg" src="{=$data['imgRoot']=}logo@3x.png" width="33.33%"></a>
+				<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui" tit="ffan.com"><img id="logoImg" src="../images/logo@3x.png" width="33.33%"></a>
 				<p class="dl">点击小鲸鱼 · 下载飞凡APP</p>
 				<a href="#" class="more">更多观影优惠活动</a>
 			</div>
